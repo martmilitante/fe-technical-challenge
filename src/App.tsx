@@ -13,9 +13,10 @@ function App() {
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <QueryClientProvider client={queryClient}>
         <Router>
-          <nav className="p-4 flex gap-4 bg-background border-b">
-            <Link to="/" className="font-bold text-lg">
-              Chess Grandmasters Wiki
+          <nav className="p-4 flex gap-4 items-center bg-background border-b">
+            <Link to="/" className="flex items-center gap-2 font-bold text-lg">
+              <img src="/chess-logo.svg" alt="Chess logo" className="w-8 h-8" />
+              <span>Chess Grandmasters Wiki</span>
             </Link>
           </nav>
           <Suspense
